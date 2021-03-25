@@ -1,45 +1,43 @@
 [[package]]
-category = "main"
-description = "The ADAL for Python library makes it easy for python application to authenticate to Azure Active Directory (AAD) in order to access AAD protected web resources."
 name = "adal"
+version = "1.2.2"
+description = "The ADAL for Python library makes it easy for python application to authenticate to Azure Active Directory (AAD) in order to access AAD protected web resources."
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.2.2"
 
 [package.dependencies]
-PyJWT = ">=1.0.0"
 cryptography = ">=1.1.0"
+PyJWT = ">=1.0.0"
 python-dateutil = ">=2.1.0"
 requests = ">=2.0.0"
 
 [[package]]
-category = "main"
-description = "ANTLR 4.8 runtime for Python 3.7"
-marker = "python_version >= \"3.0\""
 name = "antlr4-python3-runtime"
-optional = false
-python-versions = "*"
 version = "4.8"
+description = "ANTLR 4.8 runtime for Python 3.7"
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
-category = "main"
-description = "This project extends the Application Insights API surface to support Python."
 name = "applicationinsights"
+version = "0.11.9"
+description = "This project extends the Application Insights API surface to support Python."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.11.9"
 
 [[package]]
-category = "main"
-description = "In-process task scheduler with Cron-like capabilities"
 name = "apscheduler"
+version = "3.6.3"
+description = "In-process task scheduler with Cron-like capabilities"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.6.3"
 
 [package.dependencies]
 pytz = "*"
-setuptools = ">=0.7"
 six = ">=1.4.0"
 tzlocal = ">=1.2"
 
@@ -57,28 +55,26 @@ twisted = ["twisted"]
 zookeeper = ["kazoo"]
 
 [[package]]
-category = "main"
-description = "Bash tab completion for argparse"
 name = "argcomplete"
+version = "1.11.1"
+description = "Bash tab completion for argparse"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.11.1"
 
 [package.dependencies]
-[package.dependencies.importlib-metadata]
-python = ">=3.6,<3.7"
-version = ">=0.23,<2"
+importlib-metadata = {version = ">=0.23,<2", markers = "python_version == \"3.6\" or python_version == \"3.7\""}
 
 [package.extras]
 test = ["coverage", "flake8", "pexpect", "wheel"]
 
 [[package]]
-category = "dev"
-description = "Classes Without Boilerplate"
 name = "attrs"
+version = "19.3.0"
+description = "Classes Without Boilerplate"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "19.3.0"
 
 [package.extras]
 azure-pipelines = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "pytest-azurepipelines"]
@@ -87,16 +83,16 @@ docs = ["sphinx", "zope.interface"]
 tests = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Command-Line Tools Core Module"
 name = "azure-cli-core"
+version = "2.0.81"
+description = "Microsoft Azure Command-Line Tools Core Module"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.0.81"
 
 [package.dependencies]
-PyJWT = "*"
 adal = ">=1.2,<2.0"
+antlr4-python3-runtime = {version = "*", markers = "python_version >= \"3.0\""}
 argcomplete = ">=1.8,<2.0"
 azure-cli-nspkg = ">=2.0.0"
 azure-cli-telemetry = "*"
@@ -108,37 +104,33 @@ knack = ">=0.6.2,<0.7.0"
 msrest = ">=0.4.4"
 msrestazure = ">=0.6.2"
 paramiko = ">=2.0.8,<3.0.0"
+PyJWT = "*"
 pyopenssl = ">=17.1.0"
 pyyaml = "*"
 requests = ">=2.20,<3.0"
 six = ">=1.12,<2.0"
-wheel = "0.30.0"
-
-[package.dependencies.antlr4-python3-runtime]
-python = ">=3.0"
-version = "*"
 
 [package.extras]
 test = ["mock"]
 
 [[package]]
-category = "main"
-description = "Microsoft Azure CLI Namespace Package"
 name = "azure-cli-nspkg"
+version = "3.0.4"
+description = "Microsoft Azure CLI Namespace Package"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.4"
 
 [package.dependencies]
 azure-nspkg = ">=2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure CLI Telemetry Package"
 name = "azure-cli-telemetry"
+version = "1.0.4"
+description = "Microsoft Azure CLI Telemetry Package"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.0.4"
 
 [package.dependencies]
 applicationinsights = ">=0.11.1,<0.12"
@@ -146,43 +138,43 @@ azure-cli-nspkg = ">=2.0.0"
 portalocker = ">=1.2,<2.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Client Library for Python (Common)"
 name = "azure-common"
+version = "1.1.25"
+description = "Microsoft Azure Client Library for Python (Common)"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.1.25"
 
 [[package]]
-category = "main"
-description = "Azure Cosmos Python SDK"
 name = "azure-cosmos"
+version = "3.1.2"
+description = "Azure Cosmos Python SDK"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.1.2"
 
 [package.dependencies]
 requests = ">=2.10.0"
 six = ">=1.6"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure CosmosDB Namespace Package [Internal]"
 name = "azure-cosmosdb-nspkg"
+version = "2.0.2"
+description = "Microsoft Azure CosmosDB Namespace Package [Internal]"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.0.2"
 
 [package.dependencies]
 azure-nspkg = ">=2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure CosmosDB Table Client Library for Python"
 name = "azure-cosmosdb-table"
+version = "1.0.6"
+description = "Microsoft Azure CosmosDB Table Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.0.6"
 
 [package.dependencies]
 azure-common = ">=1.1.5"
@@ -192,24 +184,23 @@ python-dateutil = "*"
 requests = "*"
 
 [[package]]
-category = "main"
-description = "Azure Functions for Python"
-marker = "python_version >= \"3\" and python_version < \"4\""
 name = "azure-functions"
+version = "1.2.0"
+description = "Azure Functions for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.2.0"
 
 [package.extras]
 dev = ["flake8 (>=3.7.9,<3.8.0)", "mypy", "pytest", "requests (>=2.0.0,<3.0.0)"]
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Graph RBAC Client Library for Python"
 name = "azure-graphrbac"
+version = "0.61.1"
+description = "Microsoft Azure Graph RBAC Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.61.1"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -217,12 +208,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Key Vault Client Library for Python"
 name = "azure-keyvault"
+version = "1.1.0"
+description = "Microsoft Azure Key Vault Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -233,12 +224,12 @@ msrestazure = ">=0.4.32,<2.0.0"
 requests = ">=2.18.4"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure API Management Client Library for Python"
 name = "azure-mgmt-apimanagement"
+version = "0.1.0"
+description = "Microsoft Azure API Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -246,12 +237,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Application Insights Management Client Library for Python"
 name = "azure-mgmt-applicationinsights"
-optional = false
-python-versions = "*"
 version = "0.2.0"
+description = "Microsoft Azure Application Insights Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -259,12 +250,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Authorization Management Client Library for Python"
 name = "azure-mgmt-authorization"
-optional = false
-python-versions = "*"
 version = "0.60.0"
+description = "Microsoft Azure Authorization Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -272,12 +263,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Batch Management Client Library for Python"
 name = "azure-mgmt-batch"
-optional = false
-python-versions = "*"
 version = "7.0.0"
+description = "Microsoft Azure Batch Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -285,12 +276,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure CDN Management Client Library for Python"
 name = "azure-mgmt-cdn"
-optional = false
-python-versions = "*"
 version = "4.0.0"
+description = "Microsoft Azure CDN Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -298,12 +289,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Cognitive Services Management Client Library for Python"
 name = "azure-mgmt-cognitiveservices"
-optional = false
-python-versions = "*"
 version = "5.0.0"
+description = "Microsoft Azure Cognitive Services Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -311,12 +302,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Compute Management Client Library for Python"
 name = "azure-mgmt-compute"
-optional = false
-python-versions = "*"
 version = "10.0.0"
+description = "Microsoft Azure Compute Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -324,12 +315,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Container Instance Client Library for Python"
 name = "azure-mgmt-containerinstance"
-optional = false
-python-versions = "*"
 version = "1.5.0"
+description = "Microsoft Azure Container Instance Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -337,12 +328,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Container Registry Client Library for Python"
 name = "azure-mgmt-containerregistry"
-optional = false
-python-versions = "*"
 version = "2.8.0"
+description = "Microsoft Azure Container Registry Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -350,12 +341,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Container Service Management Client Library for Python"
 name = "azure-mgmt-containerservice"
-optional = false
-python-versions = "*"
 version = "8.3.0"
+description = "Microsoft Azure Container Service Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -363,12 +354,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Cosmos DB Management Client Library for Python"
 name = "azure-mgmt-cosmosdb"
-optional = false
-python-versions = "*"
 version = "0.11.0"
+description = "Microsoft Azure Cosmos DB Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -376,12 +367,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Cost Management Client Library for Python"
 name = "azure-mgmt-costmanagement"
+version = "0.1.0"
+description = "Microsoft Azure Cost Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -389,12 +380,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Databricks Management Client Library for Python"
 name = "azure-mgmt-databricks"
-optional = false
-python-versions = "*"
 version = "0.1.0"
+description = "Microsoft Azure Databricks Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -402,12 +393,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Data Factory Management Client Library for Python"
 name = "azure-mgmt-datafactory"
+version = "0.8.0"
+description = "Microsoft Azure Data Factory Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.8.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -415,23 +406,23 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Data Lake Management Namespace Package [Internal]"
 name = "azure-mgmt-datalake-nspkg"
+version = "3.0.1"
+description = "Microsoft Azure Data Lake Management Namespace Package [Internal]"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.1"
 
 [package.dependencies]
 azure-mgmt-nspkg = ">=3.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Data Lake Store Management Client Library for Python"
 name = "azure-mgmt-datalake-store"
+version = "0.5.0"
+description = "Microsoft Azure Data Lake Store Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.5.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -439,12 +430,12 @@ azure-mgmt-datalake-nspkg = ">=2.0.0"
 msrestazure = ">=0.4.27,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure DNS Management Client Library for Python"
 name = "azure-mgmt-dns"
+version = "3.0.0"
+description = "Microsoft Azure DNS Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -452,12 +443,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure EventGrid Management Client Library for Python"
 name = "azure-mgmt-eventgrid"
-optional = false
-python-versions = "*"
 version = "2.2.0"
+description = "Microsoft Azure EventGrid Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -465,12 +456,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure EventHub Management Client Library for Python"
 name = "azure-mgmt-eventhub"
-optional = false
-python-versions = "*"
 version = "3.0.0"
+description = "Microsoft Azure EventHub Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -478,12 +469,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure HDInsight Management Client Library for Python"
 name = "azure-mgmt-hdinsight"
-optional = false
-python-versions = "*"
 version = "1.4.0"
+description = "Microsoft Azure HDInsight Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -491,12 +482,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure IoTHub Management Client Library for Python"
 name = "azure-mgmt-iothub"
+version = "0.10.0"
+description = "Microsoft Azure IoTHub Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.10.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -504,12 +495,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Key Vault Management Client Library for Python"
 name = "azure-mgmt-keyvault"
+version = "1.1.0"
+description = "Microsoft Azure Key Vault Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -518,12 +509,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Logic Apps Management Client Library for Python"
 name = "azure-mgmt-logic"
+version = "3.0.0"
+description = "Microsoft Azure Logic Apps Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -531,12 +522,12 @@ azure-mgmt-nspkg = ">=2.0.0"
 msrestazure = ">=0.4.27,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Management Groups Client Library for Python"
 name = "azure-mgmt-managementgroups"
-optional = false
-python-versions = "*"
 version = "0.2.0"
+description = "Microsoft Azure Management Groups Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -544,12 +535,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Monitor Client Library for Python"
 name = "azure-mgmt-monitor"
-optional = false
-python-versions = "*"
 version = "0.7.0"
+description = "Microsoft Azure Monitor Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -557,12 +548,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Network Management Client Library for Python"
 name = "azure-mgmt-network"
+version = "9.0.0"
+description = "Microsoft Azure Network Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "9.0.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -570,23 +561,23 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Resource Management Namespace Package [Internal]"
 name = "azure-mgmt-nspkg"
+version = "3.0.2"
+description = "Microsoft Azure Resource Management Namespace Package [Internal]"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.2"
 
 [package.dependencies]
 azure-nspkg = ">=3.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Policy Insights Client Library for Python"
 name = "azure-mgmt-policyinsights"
-optional = false
-python-versions = "*"
 version = "0.4.0"
+description = "Microsoft Azure Policy Insights Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -594,12 +585,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure RDBMS Management Client Library for Python"
 name = "azure-mgmt-rdbms"
-optional = false
-python-versions = "*"
 version = "1.9.0"
+description = "Microsoft Azure RDBMS Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -607,12 +598,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Redis Cache Management Client Library for Python"
 name = "azure-mgmt-redis"
+version = "6.0.0"
+description = "Microsoft Azure Redis Cache Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "6.0.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -620,12 +611,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Resource Management Client Library for Python"
 name = "azure-mgmt-resource"
-optional = false
-python-versions = "*"
 version = "6.0.0"
+description = "Microsoft Azure Resource Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -633,12 +624,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Resource Graph Client Library for Python"
 name = "azure-mgmt-resourcegraph"
-optional = false
-python-versions = "*"
 version = "2.0.0"
+description = "Microsoft Azure Resource Graph Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -646,12 +637,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Search Management Client Library for Python"
 name = "azure-mgmt-search"
+version = "2.1.0"
+description = "Microsoft Azure Search Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -659,12 +650,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure SQL Management Client Library for Python"
 name = "azure-mgmt-sql"
-optional = false
-python-versions = "*"
 version = "0.16.0"
+description = "Microsoft Azure SQL Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -672,12 +663,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Storage Management Client Library for Python"
 name = "azure-mgmt-storage"
-optional = false
-python-versions = "*"
 version = "7.2.0"
+description = "Microsoft Azure Storage Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -685,12 +676,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Subscription Management Client Library for Python"
 name = "azure-mgmt-subscription"
-optional = false
-python-versions = "*"
 version = "0.5.0"
+description = "Microsoft Azure Subscription Management Client Library for Python"
+category = "main"
+optional = false
+python-versions = "*"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -698,12 +689,12 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Web Apps Management Client Library for Python"
 name = "azure-mgmt-web"
+version = "0.44.0"
+description = "Microsoft Azure Web Apps Management Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.44.0"
 
 [package.dependencies]
 azure-common = ">=1.1,<2.0"
@@ -711,32 +702,32 @@ msrest = ">=0.5.0"
 msrestazure = ">=0.4.32,<2.0.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Namespace Package [Internal]"
 name = "azure-nspkg"
+version = "3.0.2"
+description = "Microsoft Azure Namespace Package [Internal]"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.2"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Storage Blob Client Library for Python"
 name = "azure-storage-blob"
+version = "2.1.0"
+description = "Microsoft Azure Storage Blob Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1.5"
 azure-storage-common = ">=2.1,<3.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Storage Common Client Library for Python"
 name = "azure-storage-common"
+version = "2.1.0"
+description = "Microsoft Azure Storage Common Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1.5"
@@ -745,51 +736,51 @@ python-dateutil = "*"
 requests = "*"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Storage File Client Library for Python"
 name = "azure-storage-file"
+version = "2.1.0"
+description = "Microsoft Azure Storage File Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1.5"
 azure-storage-common = ">=2.1,<3.0"
 
 [[package]]
-category = "main"
-description = "Microsoft Azure Storage Queue Client Library for Python"
 name = "azure-storage-queue"
+version = "2.1.0"
+description = "Microsoft Azure Storage Queue Client Library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.1.0"
 
 [package.dependencies]
 azure-common = ">=1.1.5"
 azure-storage-common = ">=2.1,<3.0"
 
 [[package]]
-category = "main"
-description = "Modern password hashing for your software and your servers"
 name = "bcrypt"
+version = "3.1.7"
+description = "Modern password hashing for your software and your servers"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "3.1.7"
 
 [package.dependencies]
 cffi = ">=1.1"
 six = ">=1.4.1"
 
 [package.extras]
-tests = ["pytest (>=3.2.1,<3.3.0 || >3.3.0)"]
+tests = ["pytest (>=3.2.1,!=3.3.0)"]
 
 [[package]]
-category = "dev"
-description = "The AWS SDK for Python"
 name = "boto3"
+version = "1.12.46"
+description = "The AWS SDK for Python"
+category = "dev"
 optional = false
 python-versions = "*"
-version = "1.12.46"
 
 [package.dependencies]
 botocore = ">=1.15.46,<1.16.0"
@@ -797,30 +788,27 @@ jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.3.0,<0.4.0"
 
 [[package]]
-category = "dev"
-description = "Low-level, data-driven core of boto 3."
 name = "botocore"
+version = "1.15.46"
+description = "Low-level, data-driven core of boto 3."
+category = "dev"
 optional = false
 python-versions = "*"
-version = "1.15.46"
 
 [package.dependencies]
 docutils = ">=0.10,<0.16"
 jmespath = ">=0.7.1,<1.0.0"
 python-dateutil = ">=2.1,<3.0.0"
-
-[package.dependencies.urllib3]
-python = "<3.4.0 || >=3.5.0"
-version = ">=1.20,<1.26"
+urllib3 = {version = ">=1.20,<1.26", markers = "python_version != \"3.4\""}
 
 [[package]]
-category = "dev"
-description = ""
-develop = true
 name = "c7n"
+version = "0.9.0"
+description = ""
+category = "dev"
 optional = false
 python-versions = "^3.6"
-version = "0.9.0"
+develop = true
 
 [package.dependencies]
 argcomplete = "^1.11.1"
@@ -832,114 +820,113 @@ pyyaml = "^5.3"
 tabulate = "^0.8.6"
 
 [package.source]
-reference = ""
 type = "directory"
 url = "../.."
 
 [[package]]
-category = "main"
-description = "Python package for providing Mozilla's CA Bundle."
 name = "certifi"
+version = "2020.4.5.1"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
 optional = false
 python-versions = "*"
-version = "2020.4.5.1"
 
 [[package]]
-category = "main"
-description = "Foreign Function Interface for Python calling C code."
 name = "cffi"
+version = "1.14.0"
+description = "Foreign Function Interface for Python calling C code."
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.14.0"
 
 [package.dependencies]
 pycparser = "*"
 
 [[package]]
-category = "main"
-description = "Universal encoding detector for Python 2 and 3"
 name = "chardet"
+version = "3.0.4"
+description = "Universal encoding detector for Python 2 and 3"
+category = "main"
 optional = false
 python-versions = "*"
-version = "3.0.4"
 
 [[package]]
-category = "main"
-description = "Composable command line interface toolkit"
 name = "click"
-optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "7.1.1"
-
-[[package]]
+description = "Composable command line interface toolkit"
 category = "main"
-description = "Cross-platform colored terminal text."
-name = "colorama"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "0.4.3"
 
 [[package]]
+name = "colorama"
+version = "0.4.3"
+description = "Cross-platform colored terminal text."
 category = "main"
-description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
 name = "cryptography"
+version = "2.9.2"
+description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
+category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
-version = "2.9.2"
 
 [package.dependencies]
 cffi = ">=1.8,<1.11.3 || >1.11.3"
 six = ">=1.4.1"
 
 [package.extras]
-docs = ["sphinx (>=1.6.5,<1.8.0 || >1.8.0)", "sphinx-rtd-theme"]
+docs = ["sphinx (>=1.6.5,!=1.8.0)", "sphinx-rtd-theme"]
 docstest = ["doc8", "pyenchant (>=1.6.11)", "twine (>=1.12.0)", "sphinxcontrib-spelling (>=4.0.1)"]
 idna = ["idna (>=2.1)"]
 pep8test = ["flake8", "flake8-import-order", "pep8-naming"]
-test = ["pytest (>=3.6.0,<3.9.0 || >3.9.0,<3.9.1 || >3.9.1,<3.9.2 || >3.9.2)", "pretend", "iso8601", "pytz", "hypothesis (>=1.11.4,<3.79.2 || >3.79.2)"]
+test = ["pytest (>=3.6.0,!=3.9.0,!=3.9.1,!=3.9.2)", "pretend", "iso8601", "pytz", "hypothesis (>=1.11.4,!=3.79.2)"]
 
 [[package]]
-category = "main"
-description = "Distribution utilities"
 name = "distlib"
+version = "0.3.0"
+description = "Distribution utilities"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.3.0"
 
 [[package]]
-category = "dev"
-description = "Docutils -- Python Documentation Utilities"
 name = "docutils"
+version = "0.15.2"
+description = "Docutils -- Python Documentation Utilities"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "0.15.2"
 
 [[package]]
-category = "main"
-description = "Human friendly output for text interfaces using Python"
 name = "humanfriendly"
+version = "4.18"
+description = "Human friendly output for text interfaces using Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "4.18"
 
 [package.dependencies]
-pyreadline = "*"
+pyreadline = {version = "*", markers = "sys_platform == \"win32\""}
 
 [[package]]
-category = "main"
-description = "Internationalized Domain Names in Applications (IDNA)"
 name = "idna"
+version = "2.9"
+description = "Internationalized Domain Names in Applications (IDNA)"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "2.9"
 
 [[package]]
-category = "main"
-description = "Read metadata from Python packages"
 name = "importlib-metadata"
+version = "1.6.0"
+description = "Read metadata from Python packages"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
-version = "1.6.0"
 
 [package.dependencies]
 zipp = ">=0.5"
@@ -949,69 +936,65 @@ docs = ["sphinx", "rst.linker"]
 testing = ["packaging", "importlib-resources"]
 
 [[package]]
-category = "main"
-description = "An ISO 8601 date/time/duration parser and formatter"
 name = "isodate"
+version = "0.6.0"
+description = "An ISO 8601 date/time/duration parser and formatter"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.6.0"
 
 [package.dependencies]
 six = "*"
 
 [[package]]
-category = "main"
-description = "JSON Matching Expressions"
 name = "jmespath"
+version = "0.9.5"
+description = "JSON Matching Expressions"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.9.5"
 
 [[package]]
-category = "main"
-description = "Python library for serializing any arbitrary object graph into JSON"
 name = "jsonpickle"
+version = "1.4.1"
+description = "Python library for serializing any arbitrary object graph into JSON"
+category = "main"
 optional = false
 python-versions = ">=2.7"
-version = "1.4.1"
 
 [package.dependencies]
 importlib-metadata = "*"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
-testing = ["coverage (<5)", "pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-black-multipy", "pytest-cov", "ecdsa", "feedparser", "numpy", "pandas", "pymongo", "sqlalchemy", "enum34", "jsonlib"]
+testing = ["coverage (<5)", "pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-black-multipy", "pytest-cov", "ecdsa", "feedparser", "numpy", "pandas", "pymongo", "sqlalchemy", "enum34", "jsonlib"]
 "testing.libs" = ["demjson", "simplejson", "ujson", "yajl"]
 
 [[package]]
-category = "dev"
-description = "An implementation of JSON Schema validation for Python"
 name = "jsonschema"
+version = "3.2.0"
+description = "An implementation of JSON Schema validation for Python"
+category = "dev"
 optional = false
 python-versions = "*"
-version = "3.2.0"
 
 [package.dependencies]
 attrs = ">=17.4.0"
+importlib-metadata = {version = "*", markers = "python_version < \"3.8\""}
 pyrsistent = ">=0.14.0"
-setuptools = "*"
 six = ">=1.11.0"
-
-[package.dependencies.importlib-metadata]
-python = "<3.8"
-version = "*"
 
 [package.extras]
 format = ["idna", "jsonpointer (>1.13)", "rfc3987", "strict-rfc3339", "webcolors"]
 format_nongpl = ["idna", "jsonpointer (>1.13)", "webcolors", "rfc3986-validator (>0.1.0)", "rfc3339-validator"]
 
 [[package]]
-category = "main"
-description = "A Command-Line Interface framework"
 name = "knack"
+version = "0.6.3"
+description = "A Command-Line Interface framework"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.6.3"
 
 [package.dependencies]
 argcomplete = "*"
@@ -1023,12 +1006,12 @@ six = "*"
 tabulate = "*"
 
 [[package]]
-category = "main"
-description = "AutoRest swagger generator Python client runtime."
 name = "msrest"
+version = "0.6.13"
+description = "AutoRest swagger generator Python client runtime."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.6.13"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
@@ -1040,41 +1023,40 @@ requests-oauthlib = ">=0.5.0"
 async = ["aiohttp (>=3.0)", "aiodns"]
 
 [[package]]
-category = "main"
-description = "AutoRest swagger generator Python client runtime. Azure-specific module."
 name = "msrestazure"
+version = "0.6.3"
+description = "AutoRest swagger generator Python client runtime. Azure-specific module."
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.6.3"
 
 [package.dependencies]
 adal = ">=0.6.0,<2.0.0"
 msrest = ">=0.6.0,<2.0.0"
 
 [[package]]
-category = "dev"
-description = "multidict implementation"
-marker = "python_version >= \"3.6\""
 name = "multidict"
+version = "4.7.5"
+description = "multidict implementation"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
-version = "4.7.5"
 
 [[package]]
-category = "main"
-description = "A network address manipulation library for Python"
 name = "netaddr"
+version = "0.7.19"
+description = "A network address manipulation library for Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.7.19"
 
 [[package]]
-category = "main"
-description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
 name = "oauthlib"
+version = "3.1.0"
+description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "3.1.0"
 
 [package.extras]
 rsa = ["cryptography"]
@@ -1082,23 +1064,23 @@ signals = ["blinker"]
 signedtoken = ["cryptography", "pyjwt (>=1.0.0)"]
 
 [[package]]
-category = "dev"
-description = "Parameterized testing with any Python test framework"
 name = "parameterized"
+version = "0.7.4"
+description = "Parameterized testing with any Python test framework"
+category = "dev"
 optional = false
 python-versions = "*"
-version = "0.7.4"
 
 [package.extras]
 dev = ["jinja2"]
 
 [[package]]
-category = "main"
-description = "SSH2 protocol library"
 name = "paramiko"
+version = "2.7.1"
+description = "SSH2 protocol library"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.7.1"
 
 [package.dependencies]
 bcrypt = ">=3.1.3"
@@ -1112,43 +1094,43 @@ gssapi = ["pyasn1 (>=0.1.7)", "gssapi (>=1.4.1)", "pywin32 (>=2.1.8)"]
 invoke = ["invoke (>=1.3)"]
 
 [[package]]
-category = "main"
-description = "Wraps the portalocker recipe for easy usage"
 name = "portalocker"
+version = "1.7.0"
+description = "Wraps the portalocker recipe for easy usage"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.7.0"
 
 [package.dependencies]
-pywin32 = "!=226"
+pywin32 = {version = "!=226", markers = "platform_system == \"Windows\""}
 
 [package.extras]
 docs = ["sphinx (>=1.7.1)"]
 tests = ["flake8 (>=3.5.0)", "pytest (>=3.4.0)", "pytest-cache (>=1.0)", "pytest-cov (>=2.5.1)", "pytest-flakes (>=2.0.0)", "pytest-pep8 (>=1.0.6)", "sphinx (>=1.7.1)"]
 
 [[package]]
-category = "main"
-description = "C parser in Python"
 name = "pycparser"
+version = "2.20"
+description = "C parser in Python"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "2.20"
 
 [[package]]
-category = "main"
-description = "Pygments is a syntax highlighting package written in Python."
 name = "pygments"
+version = "2.6.1"
+description = "Pygments is a syntax highlighting package written in Python."
+category = "main"
 optional = false
 python-versions = ">=3.5"
-version = "2.6.1"
 
 [[package]]
-category = "main"
-description = "JSON Web Token implementation in Python"
 name = "pyjwt"
+version = "1.7.1"
+description = "JSON Web Token implementation in Python"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.7.1"
 
 [package.extras]
 crypto = ["cryptography (>=1.4)"]
@@ -1156,12 +1138,12 @@ flake8 = ["flake8", "flake8-import-order", "pep8-naming"]
 test = ["pytest (>=4.0.1,<5.0.0)", "pytest-cov (>=2.6.0,<3.0.0)", "pytest-runner (>=4.2,<5.0.0)"]
 
 [[package]]
-category = "main"
-description = "Python binding to the Networking and Cryptography (NaCl) library"
 name = "pynacl"
+version = "1.3.0"
+description = "Python binding to the Networking and Cryptography (NaCl) library"
+category = "main"
 optional = false
 python-versions = "*"
-version = "1.3.0"
 
 [package.dependencies]
 cffi = ">=1.4.1"
@@ -1169,15 +1151,15 @@ six = "*"
 
 [package.extras]
 docs = ["sphinx (>=1.6.5)", "sphinx-rtd-theme"]
-tests = ["pytest (>=3.2.1,<3.3.0 || >3.3.0)", "hypothesis (>=3.27.0)"]
+tests = ["pytest (>=3.2.1,!=3.3.0)", "hypothesis (>=3.27.0)"]
 
 [[package]]
-category = "main"
-description = "Python wrapper module around the OpenSSL library"
 name = "pyopenssl"
+version = "19.1.0"
+description = "Python wrapper module around the OpenSSL library"
+category = "main"
 optional = false
 python-versions = "*"
-version = "19.1.0"
 
 [package.dependencies]
 cryptography = ">=2.8"
@@ -1188,68 +1170,66 @@ docs = ["sphinx", "sphinx-rtd-theme"]
 test = ["flaky", "pretend", "pytest (>=3.0.1)"]
 
 [[package]]
-category = "main"
-description = "A python implmementation of GNU readline."
-marker = "sys_platform == \"win32\""
 name = "pyreadline"
+version = "2.1"
+description = "A python implmementation of GNU readline."
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.1"
 
 [[package]]
-category = "dev"
-description = "Persistent/Functional/Immutable data structures"
 name = "pyrsistent"
+version = "0.16.0"
+description = "Persistent/Functional/Immutable data structures"
+category = "dev"
 optional = false
 python-versions = "*"
-version = "0.16.0"
 
 [package.dependencies]
 six = "*"
 
 [[package]]
-category = "main"
-description = "Extensions to the standard Python datetime module"
 name = "python-dateutil"
+version = "2.8.1"
+description = "Extensions to the standard Python datetime module"
+category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
-version = "2.8.1"
 
 [package.dependencies]
 six = ">=1.5"
 
 [[package]]
-category = "main"
-description = "World timezone definitions, modern and historical"
 name = "pytz"
-optional = false
-python-versions = "*"
 version = "2019.3"
-
-[[package]]
+description = "World timezone definitions, modern and historical"
 category = "main"
-description = "Python for Window Extensions"
-marker = "platform_system == \"Windows\""
-name = "pywin32"
 optional = false
 python-versions = "*"
+
+[[package]]
+name = "pywin32"
 version = "227"
+description = "Python for Window Extensions"
+category = "main"
+optional = false
+python-versions = "*"
 
 [[package]]
-category = "main"
-description = "YAML parser and emitter for Python"
 name = "pyyaml"
+version = "5.4"
+description = "YAML parser and emitter for Python"
+category = "main"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "5.3.1"
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 
 [[package]]
-category = "main"
-description = "Python HTTP for Humans."
 name = "requests"
+version = "2.23.0"
+description = "Python HTTP for Humans."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "2.23.0"
 
 [package.dependencies]
 certifi = ">=2017.4.17"
@@ -1259,154 +1239,138 @@ urllib3 = ">=1.21.1,<1.25.0 || >1.25.0,<1.25.1 || >1.25.1,<1.26"
 
 [package.extras]
 security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
-socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
+socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
 [[package]]
-category = "main"
-description = "OAuthlib authentication support for Requests."
 name = "requests-oauthlib"
+version = "1.3.0"
+description = "OAuthlib authentication support for Requests."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "1.3.0"
 
 [package.dependencies]
 oauthlib = ">=3.0.0"
 requests = ">=2.0.0"
 
 [package.extras]
-rsa = ["oauthlib (>=3.0.0)"]
+rsa = ["oauthlib[signedtoken] (>=3.0.0)"]
 
 [[package]]
-category = "dev"
-description = "An Amazon S3 Transfer Manager"
 name = "s3transfer"
+version = "0.3.3"
+description = "An Amazon S3 Transfer Manager"
+category = "dev"
 optional = false
 python-versions = "*"
-version = "0.3.3"
 
 [package.dependencies]
 botocore = ">=1.12.36,<2.0a.0"
 
 [[package]]
-category = "main"
-description = "Python 2 and 3 compatibility utilities"
 name = "six"
+version = "1.14.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "1.14.0"
 
 [[package]]
-category = "main"
-description = "Pretty-print tabular data"
 name = "tabulate"
+version = "0.8.7"
+description = "Pretty-print tabular data"
+category = "main"
 optional = false
 python-versions = "*"
-version = "0.8.7"
 
 [package.extras]
 widechars = ["wcwidth"]
 
 [[package]]
-category = "main"
-description = "tzinfo object for the local timezone"
 name = "tzlocal"
+version = "2.0.0"
+description = "tzinfo object for the local timezone"
+category = "main"
 optional = false
 python-versions = "*"
-version = "2.0.0"
 
 [package.dependencies]
 pytz = "*"
 
 [[package]]
-category = "main"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
 name = "urllib3"
+version = "1.25.9"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
-version = "1.25.9"
 
 [package.extras]
 brotli = ["brotlipy (>=0.6.0)"]
 secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "pyOpenSSL (>=0.14)", "ipaddress"]
-socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
+socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
-category = "dev"
-description = "Automatically mock your HTTP interactions to simplify and speed up testing"
 name = "vcrpy"
+version = "4.0.2"
+description = "Automatically mock your HTTP interactions to simplify and speed up testing"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
-version = "4.0.2"
 
 [package.dependencies]
 PyYAML = "*"
 six = ">=1.5"
 wrapt = "*"
-
-[package.dependencies.yarl]
-python = ">=3.6"
-version = "*"
+yarl = {version = "*", markers = "python_version >= \"3.6\""}
 
 [[package]]
-category = "dev"
-description = "Python unittest integration for vcr.py"
 name = "vcrpy-unittest"
+version = "0.1.7"
+description = "Python unittest integration for vcr.py"
+category = "dev"
 optional = false
 python-versions = "*"
-version = "0.1.7"
 
 [package.dependencies]
 vcrpy = "*"
 
 [[package]]
-category = "main"
-description = "A built-package format for Python."
-name = "wheel"
-optional = false
-python-versions = "*"
-version = "0.30.0"
-
-[package.extras]
-faster-signatures = ["ed25519ll"]
-signatures = ["keyring", "keyrings.alt", "pyxdg"]
-test = ["jsonschema", "pytest (>=3.0.0)", "pytest-cov"]
-
-[[package]]
-category = "dev"
-description = "Module for decorators, wrappers and monkey patching."
 name = "wrapt"
+version = "1.12.1"
+description = "Module for decorators, wrappers and monkey patching."
+category = "dev"
 optional = false
 python-versions = "*"
-version = "1.12.1"
 
 [[package]]
-category = "dev"
-description = "Yet another URL library"
-marker = "python_version >= \"3.6\""
 name = "yarl"
+version = "1.4.2"
+description = "Yet another URL library"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
-version = "1.4.2"
 
 [package.dependencies]
 idna = ">=2.0"
 multidict = ">=4.0"
 
 [[package]]
-category = "main"
-description = "Backport of pathlib-compatible object wrapper for zip files"
 name = "zipp"
+version = "3.1.0"
+description = "Backport of pathlib-compatible object wrapper for zip files"
+category = "main"
 optional = false
 python-versions = ">=3.6"
-version = "3.1.0"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "9ce5b9cd768efb4154979cf7205abd5e75a175758c7b9a72dafa944f488e6d7d"
+lock-version = "1.1"
 python-versions = "^3.6"
+content-hash = "9ce5b9cd768efb4154979cf7205abd5e75a175758c7b9a72dafa944f488e6d7d"
 
 [metadata.files]
 adal = [
@@ -1439,10 +1403,12 @@ azure-cli-core = [
 azure-cli-nspkg = [
     {file = "azure-cli-nspkg-3.0.4.tar.gz", hash = "sha256:1bde56090f548c6435bd3093995cf88e4c445fb040604df8b5b5f70780d79181"},
     {file = "azure_cli_nspkg-3.0.4-py2.py3-none-any.whl", hash = "sha256:9a1e4f3197183470e4afecfdd45c92320f6753555b06a70651f89972332ffaf6"},
+    {file = "azure_cli_nspkg-3.0.4-py3-none-any.whl", hash = "sha256:34ff69dfed9180aa945bca2c0b7e5603d84e92b28c531efe4beae51a7230791d"},
 ]
 azure-cli-telemetry = [
     {file = "azure-cli-telemetry-1.0.4.tar.gz", hash = "sha256:1f239d544d309c29e827982cc20113eb57037dba16db6cdd2e0283e437e0e577"},
     {file = "azure_cli_telemetry-1.0.4-py2.py3-none-any.whl", hash = "sha256:7b18d7520e35e134136a0f7de38403a7dbce7b1e835065bd9e965579815ddf2f"},
+    {file = "azure_cli_telemetry-1.0.4-py3-none-any.whl", hash = "sha256:421e80c2fe3fdff8c38d27ee1fdfdfef1326c79212d6e23a6ebe308d19df552a"},
 ]
 azure-common = [
     {file = "azure-common-1.1.25.zip", hash = "sha256:ce0f1013e6d0e9faebaf3188cc069f4892fc60a6ec552e3f817c1a2f92835054"},
@@ -1654,6 +1620,7 @@ bcrypt = [
     {file = "bcrypt-3.1.7-cp34-abi3-manylinux1_x86_64.whl", hash = "sha256:c9457fa5c121e94a58d6505cadca8bed1c64444b83b3204928a866ca2e599105"},
     {file = "bcrypt-3.1.7-cp34-cp34m-win32.whl", hash = "sha256:8b10acde4e1919d6015e1df86d4c217d3b5b01bb7744c36113ea43d529e1c3de"},
     {file = "bcrypt-3.1.7-cp34-cp34m-win_amd64.whl", hash = "sha256:cb93f6b2ab0f6853550b74e051d297c27a638719753eb9ff66d1e4072be67133"},
+    {file = "bcrypt-3.1.7-cp35-abi3-manylinux2014_aarch64.whl", hash = "sha256:436a487dec749bca7e6e72498a75a5fa2433bda13bac91d023e18df9089ae0b8"},
     {file = "bcrypt-3.1.7-cp35-cp35m-win32.whl", hash = "sha256:6fe49a60b25b584e2f4ef175b29d3a83ba63b3a4df1b4c0605b826668d1b6be5"},
     {file = "bcrypt-3.1.7-cp35-cp35m-win_amd64.whl", hash = "sha256:a595c12c618119255c90deb4b046e1ca3bcfad64667c43d1166f2b04bc72db09"},
     {file = "bcrypt-3.1.7-cp36-cp36m-win32.whl", hash = "sha256:74a015102e877d0ccd02cdeaa18b32aa7273746914a6c5d0456dd442cb65b99c"},
@@ -1897,19 +1864,30 @@ pywin32 = [
     {file = "pywin32-227-cp39-cp39-win_amd64.whl", hash = "sha256:f27cec5e7f588c3d1051651830ecc00294f90728d19c3bf6916e6dba93ea357c"},
 ]
 pyyaml = [
-    {file = "PyYAML-5.3.1-cp27-cp27m-win32.whl", hash = "sha256:74809a57b329d6cc0fdccee6318f44b9b8649961fa73144a98735b0aaf029f1f"},
-    {file = "PyYAML-5.3.1-cp27-cp27m-win_amd64.whl", hash = "sha256:240097ff019d7c70a4922b6869d8a86407758333f02203e0fc6ff79c5dcede76"},
-    {file = "PyYAML-5.3.1-cp35-cp35m-win32.whl", hash = "sha256:4f4b913ca1a7319b33cfb1369e91e50354d6f07a135f3b901aca02aa95940bd2"},
-    {file = "PyYAML-5.3.1-cp35-cp35m-win_amd64.whl", hash = "sha256:cc8955cfbfc7a115fa81d85284ee61147059a753344bc51098f3ccd69b0d7e0c"},
-    {file = "PyYAML-5.3.1-cp36-cp36m-win32.whl", hash = "sha256:7739fc0fa8205b3ee8808aea45e968bc90082c10aef6ea95e855e10abf4a37b2"},
-    {file = "PyYAML-5.3.1-cp36-cp36m-win_amd64.whl", hash = "sha256:69f00dca373f240f842b2931fb2c7e14ddbacd1397d57157a9b005a6a9942648"},
-    {file = "PyYAML-5.3.1-cp37-cp37m-win32.whl", hash = "sha256:d13155f591e6fcc1ec3b30685d50bf0711574e2c0dfffd7644babf8b5102ca1a"},
-    {file = "PyYAML-5.3.1-cp37-cp37m-win_amd64.whl", hash = "sha256:73f099454b799e05e5ab51423c7bcf361c58d3206fa7b0d555426b1f4d9a3eaf"},
-    {file = "PyYAML-5.3.1-cp38-cp38-win32.whl", hash = "sha256:06a0d7ba600ce0b2d2fe2e78453a470b5a6e000a985dd4a4e54e436cc36b0e97"},
-    {file = "PyYAML-5.3.1-cp38-cp38-win_amd64.whl", hash = "sha256:95f71d2af0ff4227885f7a6605c37fd53d3a106fcab511b8860ecca9fcf400ee"},
-    {file = "PyYAML-5.3.1.tar.gz", hash = "sha256:b8eac752c5e14d3eca0e6dd9199cd627518cb5ec06add0de9d32baeee6fe645d"},
+    {file = "PyYAML-5.4-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:f7a21e3d99aa3095ef0553e7ceba36fb693998fbb1226f1392ce33681047465f"},
+    {file = "PyYAML-5.4-cp27-cp27m-win32.whl", hash = "sha256:52bf0930903818e600ae6c2901f748bc4869c0c406056f679ab9614e5d21a166"},
+    {file = "PyYAML-5.4-cp27-cp27m-win_amd64.whl", hash = "sha256:a36a48a51e5471513a5aea920cdad84cbd56d70a5057cca3499a637496ea379c"},
+    {file = "PyYAML-5.4-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:5e7ac4e0e79a53451dc2814f6876c2fa6f71452de1498bbe29c0b54b69a986f4"},
+    {file = "PyYAML-5.4-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:cc552b6434b90d9dbed6a4f13339625dc466fd82597119897e9489c953acbc22"},
+    {file = "PyYAML-5.4-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:0dc9f2eb2e3c97640928dec63fd8dc1dd91e6b6ed236bd5ac00332b99b5c2ff9"},
+    {file = "PyYAML-5.4-cp36-cp36m-win32.whl", hash = "sha256:5a3f345acff76cad4aa9cb171ee76c590f37394186325d53d1aa25318b0d4a09"},
+    {file = "PyYAML-5.4-cp36-cp36m-win_amd64.whl", hash = "sha256:f3790156c606299ff499ec44db422f66f05a7363b39eb9d5b064f17bd7d7c47b"},
+    {file = "PyYAML-5.4-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:124fd7c7bc1e95b1eafc60825f2daf67c73ce7b33f1194731240d24b0d1bf628"},
+    {file = "PyYAML-5.4-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:8b818b6c5a920cbe4203b5a6b14256f0e5244338244560da89b7b0f1313ea4b6"},
+    {file = "PyYAML-5.4-cp37-cp37m-win32.whl", hash = "sha256:737bd70e454a284d456aa1fa71a0b429dd527bcbf52c5c33f7c8eee81ac16b89"},
+    {file = "PyYAML-5.4-cp37-cp37m-win_amd64.whl", hash = "sha256:7242790ab6c20316b8e7bb545be48d7ed36e26bbe279fd56f2c4a12510e60b4b"},
+    {file = "PyYAML-5.4-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:cc547d3ead3754712223abb7b403f0a184e4c3eae18c9bb7fd15adef1597cc4b"},
+    {file = "PyYAML-5.4-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:8635d53223b1f561b081ff4adecb828fd484b8efffe542edcfdff471997f7c39"},
+    {file = "PyYAML-5.4-cp38-cp38-win32.whl", hash = "sha256:26fcb33776857f4072601502d93e1a619f166c9c00befb52826e7b774efaa9db"},
+    {file = "PyYAML-5.4-cp38-cp38-win_amd64.whl", hash = "sha256:b2243dd033fd02c01212ad5c601dafb44fbb293065f430b0d3dbf03f3254d615"},
+    {file = "PyYAML-5.4-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:31ba07c54ef4a897758563e3a0fcc60077698df10180abe4b8165d9895c00ebf"},
+    {file = "PyYAML-5.4-cp39-cp39-manylinux1_x86_64.whl", hash = "sha256:02c78d77281d8f8d07a255e57abdbf43b02257f59f50cc6b636937d68efa5dd0"},
+    {file = "PyYAML-5.4-cp39-cp39-win32.whl", hash = "sha256:fdc6b2cb4b19e431994f25a9160695cc59a4e861710cc6fc97161c5e845fc579"},
+    {file = "PyYAML-5.4-cp39-cp39-win_amd64.whl", hash = "sha256:8bf38641b4713d77da19e91f8b5296b832e4db87338d6aeffe422d42f1ca896d"},
+    {file = "PyYAML-5.4.tar.gz", hash = "sha256:3c49e39ac034fd64fd576d63bb4db53cda89b362768a67f07749d55f128ac18a"},
 ]
 requests = [
+    {file = "requests-2.23.0-py2.7.egg", hash = "sha256:5d2d0ffbb515f39417009a46c14256291061ac01ba8f875b90cad137de83beb4"},
     {file = "requests-2.23.0-py2.py3-none-any.whl", hash = "sha256:43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"},
     {file = "requests-2.23.0.tar.gz", hash = "sha256:b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"},
 ]
@@ -1945,10 +1923,6 @@ vcrpy = [
 vcrpy-unittest = [
     {file = "vcrpy-unittest-0.1.7.tar.gz", hash = "sha256:a508d8848e678243f1c0d4b152a645c18403a8da517b8a44dfcfc35a675ec981"},
     {file = "vcrpy_unittest-0.1.7-py2.py3-none-any.whl", hash = "sha256:b5e2d78bf4c13bc04dca04061dda934abba5f2c9d5201f148747800ff80a762b"},
-]
-wheel = [
-    {file = "wheel-0.30.0-py2.py3-none-any.whl", hash = "sha256:e721e53864f084f956f40f96124a74da0631ac13fbbd1ba99e8e2b5e9cafdf64"},
-    {file = "wheel-0.30.0.tar.gz", hash = "sha256:9515fe0a94e823fd90b08d22de45d7bde57c90edce705b22f5e1ecf7e1b653c8"},
 ]
 wrapt = [
     {file = "wrapt-1.12.1.tar.gz", hash = "sha256:b62ffa81fb85f4332a4f609cab4ac40709470da05643a082ec1eb88e6d9b97d7"},
